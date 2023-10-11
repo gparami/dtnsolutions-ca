@@ -3,9 +3,9 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "dev": "cross-env FORCE_COLOR=1 next dev",
-    "build": "next build",
-    "start": "next start",
+    "dev": "tinacms dev -c \"cross-env FORCE_COLOR=1 next dev\"",
+    "build": "tinacms build && next build",
+    "start": "tinacms build && next start",
     "lint": "next lint",
     "lint:fix": "next lint --fix",
     "prettier": "prettier --check \"**/*.{js,jsx,ts,tsx}\"",
@@ -46,6 +46,7 @@
     "@semantic-release/npm": "^10.0.3",
     "@semantic-release/release-notes-generator": "^11.0.1",
     "@t3-oss/env-nextjs": "^0.7.0",
+    "@tinacms/cli": "^1.5.30",
     "@vercel/otel": "^0.3.0",
     "class-variance-authority": "^0.7.0",
     "lodash": "^4.17.21",
@@ -54,6 +55,7 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "tailwind-merge": "^1.10.0",
+    "tinacms": "^1.5.21",
     "zod": "^3.21.4"
   },
   "devDependencies": {
